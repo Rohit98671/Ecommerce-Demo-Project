@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.pro-title h4{
+    font-size: 20px;
+}
+
+
+#listPage.print {
+    background-color: #FAF2AD;
+    padding: 40px;
+    font-family: cursive;
+    font-size: 20px;
+}
+#listPage.print ul {
+    margin: 10px 0px;
+    padding: 0px;
+    border-left: 4px double red;
+}
+#listPage.print li {
+    list-style-type:none;
+    margin: 0px -20px;
+    padding-left: 26px;
+    border-bottom: 1px solid blue;
+    line-height: 36px;
+    font-size: 34px;
+    font-family: cursive;
+}
+
+#listPage .pro-title h4 a{
+    font-size: 30px;
+}
+
+.product-img-left a{
+    width: 500px;
+}
+
+/*#formArea {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    margin-top: -100px;*/
+/*    margin-left: -200px;*/
+/*}*/

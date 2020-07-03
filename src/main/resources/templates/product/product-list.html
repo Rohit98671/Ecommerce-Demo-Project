@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:replace="~{include/header::head}">-->
+<link rel="stylesheet" th:href="@{/css/ProductList.css}">
+<!--</head>-->
+<!--<header th:replace="~{include/top-header::top-head}">-->
+<!--</header>-->
+<body>
+
+<div class="content">
+    <h1>This is Product list. Below are the Products.</h1>
+    <table class="responstable">
+
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th>Image</th>
+            <th>Description</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        <div id="add"> <a type="button" th:href="@{add}">Add Product</a>
+                       <a type="button" th:href="@{/salesList}">Products On Sale</a>
+                       <a type="button" th:href="@{/listOrders}">OrderDetails</a>
+                       <a type="button" th:href="@{/viewMessage}">Customer's Messages</a>
+                       <a type="button" th:href="@{home}">Log out</a></div>
+        <tr th:each="pro:${products}">
+            <td th:text="${pro.prodname}"></td>
+            <td th:text="${pro.prodprice}"></td>
+            <td th:text="${pro.stats}"></td>
+            <td th:img="${pro.prodimg}" src="#" alt="product image" ></td>
+            <td th:text="${pro.description}"></td>
+            <td><a th:href="@{/edit(id=${pro.prodid})}">Edit</a></td>
+            <td><a th:href="@{/delete(id=${pro.prodid})}">Delete</a></td>
+        </tr>
+    </table>
+
+</div>
+<!--<footer th:replace="~{include/footer::foot}">-->
+<!--</footer>-->
+</body>
+</html>

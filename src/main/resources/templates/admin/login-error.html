@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+Incorrect username and password.
+<!--<div><a th:href="@{/customer/save}">AdministratorLogin</a></div>-->
+<div><a th:href="@{adminLogin}">Login Again</a></div><br/>
+
+Maybe You are not an Administrator. I recommend you to Login as a Customer. <br/>
+<div><a th:href="@{login}">Login Here</a></div>
+
+If you have not registered.
+<div><a th:href="@{registration}">Register Here</a></div>
+
+</body>
+</html>

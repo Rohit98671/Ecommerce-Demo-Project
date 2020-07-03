@@ -1,0 +1,25 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/header::head}">
+</head>
+<body>
+<header th:replace="~{include/top-header::top-head}">
+</header>
+<div class="content">
+    <form action="/saveSales" method="post" th:object="${sales}" enctype="multipart/form-data">
+        <input type="hidden" name="id" th:value="${prodid}"> <br/>
+        <input type="hidden" name="id" th:value="${salesid}"> <br/>
+
+        Name: <input type="text" name="name" th:value="${name}"> <br/>
+        Offer Price: <input type="number" name="offerprice" th:value="${offerprice}"> <br/>
+        Start Date: <input type="text" name="startdate" th:value="${startdate}"> <br/>
+        End Date: <input type="text" name="enddate" th:value="${enddate}"> <br/>
+        Image: <input type="file" name="file" th:value="${prodimg}" onchange="readURL(this);" accept="image/"> <br/>
+        Description: <input type="text" name="salesdesc" th:value="${salesdesc}"> <br/>
+        <input type="submit" VALUE="Submit">
+    </form>
+</div>
+<footer th:replace="~{include/footer::foot}">
+</footer>
+</body>
+</html>

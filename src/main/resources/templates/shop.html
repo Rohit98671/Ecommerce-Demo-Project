@@ -1,0 +1,323 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/header::head}">
+</head>
+<body>
+<header th:replace="~{include/top-header::top-head}">
+</header>
+<!-- mobile-menu-start -->
+<div class="mobile-menu-area hidden-md hidden-lg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="mobile-menu">
+					<nav id="mobile-menu">
+						<ul>
+							<li class="active"><a href="index.html">Home</a>
+								<ul>
+									<li><a th:href="@{loginHome}">home version 1</a></li>
+									<li><a th:href="@{loginHome}">home version 2</a></li>
+									<li><a th:href="@{loginHome}">home version 3</a></li>
+									<li><a th:href="@{loginHome}">home version 4</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Flashlights & Lamps</a></li>
+							<li><a href="#">Holiday Supplies & Gifts</a></li>
+							<li><a href="#">Health & Beauty</a></li>
+							<li><a href="#"> Toys & Hobbies</a></li>
+							<li><a href="#">Jewelry & Watches</a></li>
+							<li><a href="#">Laptops & Accessories</a>
+								<ul>
+									<li><a href="#">Linux</a>
+										<ul>
+											<li><a href="#">Edubuntu</a></li>
+											<li><a href="#">Kubuntu</a></li>
+											<li><a href="#">Lubuntu</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Mac</a>
+										<ul>
+											<li><a href="#">Mac OS X 10.0</a></li>
+											<li><a href="#">Mac OS X 10.7</a></li>
+											<li><a href="#">OS X 10.11</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Ubuntu</a>
+										<ul>
+											<li><a href="#">Ubuntu Server</a></li>
+											<li><a href="#">Ubuntu Studio</a></li>
+											<li><a href="#">Ubuntu TV</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Windows</a>
+										<ul>
+											<li><a href="#">Windows 10</a></li>
+											<li><a href="#">Windows 7</a></li>
+											<li><a href="#">Windows 8.1</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">new product</a></li>
+							<li><a href="#">Bags, Shoes & Accessories</a></li>
+							<li><a href="#">Cameras & Photo</a></li>
+							<li><a href="#"> Computers & Networking</a></li>
+							<li><a href="#">Electronics</a>
+								<ul>
+									<li><a href="#">Sony TV</a></li>
+									<li><a href="#">Micromax TV</a></li>
+									<li><a href="#">Panasonic TV</a></li>
+									<li><a href="#">Samsung TV</a></li>
+								</ul>
+							</li>
+							<li><a href="#">page</a>
+								<ul>
+									<li><a th:href="@{wishList}">my wishlist</a></li>
+									<li><a th:href="@{shoppingCart}">cart page</a></li>
+									<!--											<li><a th:href="@{blog.html}">blog page</a></li>-->
+									<li><a th:href="@{checkout}">checkout</a></li>
+									<li><a th:href="@{productDetails}">product-details</a></li>
+									<li><a th:href="@{myAccount}">My Account</a></li>
+									<li><a th:href="@{shop-left-sidebar.html}">shop-left-sidebar</a></li>
+									<li><a th:href="@{shop-right-sidebar.html}">shop-right-sidebar</a></li>
+									<!--											<li><a th:href="@{login}">login</a></li>-->
+									<li><a th:href="@{shop}">shop page</a></li>
+									<li><a th:href="@{about}">About us</a></li>
+									<li><a th:href="@{compare.html}">compare</a></li>
+									<li><a th:href="@{contact}">contact us</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Sports & Outdoors</a>
+								<ul>
+									<li><a href="#">Electronic</a>
+										<ul>
+											<li><a href="#">Bedroom</a></li>
+											<li><a href="#">Kitchen</a></li>
+											<li><a href="#">Living room</a></li>
+											<li><a href="#">Out door</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Bedroom</a>
+										<ul>
+											<li><a href="#">Living room</a></li>
+											<li><a href="#">Out door</a></li>
+											<li><a href="#">Television</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Television</a>
+										<ul>
+											<li><a href="#">Samsung</a></li>
+											<li><a href="#">Sony</a></li>
+											<li><a href="#">Sony Bravia</a></li>
+											<li><a href="#">Samsung</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Washing</a>
+										<ul>
+											<li><a href="#">Commercial</a></li>
+											<li><a href="#">Front-Load</a></li>
+											<li><a href="#">Pedestal</a></li>
+											<li><a href="#">Top-Load</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- mobile-menu-end -->
+<!-- mainmenu-area-end -->
+<!-- breadcrumb start -->
+<div class="breadcrumb-area">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+			<li class="active">Shop</li>
+		</ol>
+	</div>
+</div>
+<!-- breadcrumb end -->
+<!-- shop-area start -->
+<div class="shop-area">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-4">
+				<div class="column mt-55">
+					<h2 class="title-block">Catalog</h2>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Availability</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#">In stock <span>(13)</span></a></li>
+							<li><a href="#">In stock <span>(13)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Condition</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#">New <span>(11)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Manufacturer</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#"> Fashion Manufacturer  <span>(13)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Manufacturer</h3>
+						<div class="price-filter">
+							<p>
+								<label for="amount">Range:</label>
+								<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+							</p>
+							<div id="slider-range"></div>
+						</div>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Size</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#"> S  <span>(13)</span></a></li>
+							<li><a href="#"> M  <span>(15)</span></a></li>
+							<li><a href="#"> L  <span>(6)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Size</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#"> Beige  <span>(2)</span></a></li>
+							<li><a href="#"> White <span>(4)</span></a></li>
+							<li><a href="#"> Black  <span>(4)</span></a></li>
+							<li><a href="#"> Orange   <span>(6)</span></a></li>
+							<li><a href="#"> Blue  <span>(4)</span></a></li>
+							<li><a href="#"> Green  <span>(1)</span></a></li>
+							<li><a href="#"> Yellow  <span>(5)</span></a></li>
+							<li><a href="#">  Pink <span>(2)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Compositions</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#">  Cotton  <span>(2)</span></a></li>
+							<li><a href="#"> Polyester <span>(4)</span></a></li>
+							<li><a href="#"> Viscose  <span>(4)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Styles</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#">   Casual  <span>(2)</span></a></li>
+							<li><a href="#"> Dressy  <span>(4)</span></a></li>
+							<li><a href="#"> Girly  <span>(4)</span></a></li>
+						</ul>
+					</div>
+					<div class="sidebar-widget">
+						<h3 class="sidebar-title">Properties</h3>
+						<ul class="sidebar-menu">
+							<li><a href="#">Colorful Dress <span>(2)</span></a></li>
+							<li><a href="#">Maxi Dress <span>(4)</span></a></li>
+							<li><a href="#">Midi Dress <span>(4)</span></a></li>
+							<li><a href="#">Short Dress <span>(3)</span></a></li>
+							<li><a href="#">Short Sleeve <span>(2)</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 col-sm-8">
+				<h2 class="page-heading mt-40">
+					<span class="cat-name">Sofa</span>
+					<span class="heading-counter">There are 13 products.</span>
+				</h2>
+				<div class="shop-page-bar">
+					<div>
+						<div class="shop-bar">
+							<!-- Nav tabs -->
+							<ul class="shop-tab f-left" role="tablist">
+								<li role="presentation" class="active"><a href="#home" data-toggle="tab"><i class="fa fa-th-large" aria-hidden="true"></i></a></li>
+								<li role="presentation"><a href="#profile" data-toggle="tab"><i class="fa fa-th-list" aria-hidden="true"></i></a></li>
+							</ul>
+							<div class="selector-field f-left ml-20 hidden-xs">
+								<form action="#">
+									<label>Sort by</label>
+									<select name="select">
+										<option value="">----</option>
+										<option value="">Price: Lowest first</option>
+										<option value="">Price: Highest first</option>
+										<option value="">Product Name: A to Z</option>
+										<option value="">Product Name: Z to A</option>
+										<option value="">In stock</option>
+										<option value="">Reference: Lowest first</option>
+										<option value="">Reference: Highest first</option>
+									</select>
+								</form>
+							</div>
+							<div class="selector-field f-left ml-30 hidden-xs">
+								<form action="#">
+									<label>Show</label>
+									<select name="select">
+										<option value="">12</option>
+										<option value="">13</option>
+										<option value="">14</option>
+									</select>
+								</form>
+							</div>
+							<div class="selector-field f-right ml-30">
+								<form action="#">
+									<button class="compare">Compare (1)</button>
+								</form>
+							</div>
+						</div>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								<div class="row">
+									<div class="col-lg-4 col-md-4 col-sm-6" th:each="pro:${products}">
+										<div class="single-product mb-30  white-bg">
+											<div class="product-img pt-20">
+												<a th:href="@{productDetails(id=${pro.prodid})}"><img th:src="${'/image/' + pro.prodid}" alt="Image"></a>
+											</div>
+											<div class="product-content product-i">
+												<div class="pro-title">
+													<h4><a th:href="@{productDetails(id=${pro.prodid})}"><span th:text="${pro.prodname}"></span></a></h4>
+												</div>
+												<div class="pro-rating ">
+													<a href="#"><i class="fa fa-star"></i></a>
+													<a href="#"><i class="fa fa-star"></i></a>
+													<a href="#"><i class="fa fa-star"></i></a>
+													<a href="#"><i class="fa fa-star"></i></a>
+													<a href="#"><i class="fa fa-star-o"></i></a>
+												</div>
+												<div class="price-box">
+													<span class="price product-price" th:text="${pro.prodprice}">¥</span>
+												</div>
+												<div class="product-icon">
+													<div class="product-icon-left f-left">
+														<a th:href="@{/addToCart(prodId=${pro.getProdid()})}" th:object="${shoppingCart}"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+													</div>
+													<div class="product-icon-right floatright">
+<!--														<a href="#" data-toggle="tooltip" title="Compare"><i class="fa fa-exchange"></i></a>-->
+														<a th:href="@{/saveToWishlist(prodId=${pro.getProdid()})}"  th:object="${wishlist} "data-toggle="tooltip" title="Wishlist"><i class="fa fa-heart"></i></a>
+													</div>
+												</div>
+											</div>
+											<span class="new">new</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- shop-area end -->
+<footer th:replace="~{include/footer::foot}">
+</footer>
+</body>
+</html>
+

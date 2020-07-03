@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/header::head}">
+</head>
+<body>
+<header th:replace="~{include/top-header::top-head}">
+</header>
+<div class="content">
+<form action="/saveProduct" method="post" th:object="${products}" enctype="multipart/form-data">
+    <input type="hidden" name="id" th:value="${prodid}"> <br/>
+    <input type="hidden" name="id" th:value="${wishlistid}"> <br/>
+    <input type="hidden" name="id" th:value="${cartid}"> <br/>
+    <input type="hidden" name="id" th:value="${ratingsid}"> <br/>
+    <input type="hidden" name="id" th:value="${oderdetailsid}"> <br/>
+    <input type="hidden" name="id" th:value="${salesid}"> <br/>
+
+    Name: <input type="text" name="prodname" th:value="${prodname}"> <br/>
+    Price: <input type="number" name="prodprice" th:value="${prodprice}"> <br/>
+    Status: <input type="text" name="stats" th:value="${stats}"> <br/>
+    Image: <input type="file" name="file" th:value="${prodimg}" onchange="readURL(this);" accept="image/"> <br/>
+    Description: <input type="text" name="description" th:value="${description}"> <br/>
+    <input type="submit" VALUE="Submit">
+</form>
+</div>
+<footer th:replace="~{include/footer::foot}">
+</footer>
+</body>
+</html>

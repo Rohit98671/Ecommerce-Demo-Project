@@ -1,0 +1,20 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/header::head}">
+</head>
+<body>
+<header th:replace="~{include/logged-header::top-head}">
+</header>
+<body>
+<div class="product-content">
+    <h1>Thank You For Your Purchase.</h1>
+    <div id="add"> <a type="button" th:href="@{shop}">Continue Shopping</a> <br/> <br/> <br/>
+
+        <a type="button" th:href="@{home}">Log out</a></div>
+</div>
+</body>
+
+<footer th:replace="~{include/logged-footer::foot}">
+</footer>
+</body>
+</html>

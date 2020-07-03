@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:replace="~{include/header::head}">-->
+<link rel="stylesheet" th:href="@{/css/ProductList.css}">
+<!--</head>-->
+<!--<header th:replace="~{include/top-header::top-head}">-->
+<!--</header>-->
+<body>
+
+<div class="content">
+    <h1>Customer Messages</h1>
+    <table class="responstable">
+
+        <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>email</th>
+            <th>Message</th>
+        </tr>
+        <div id="add">  <a type="button" th:href="@{/list}">Back to Order List</a>
+            <a type="button" th:href="@{home}">Log out</a></div>
+        <tr th:each="msg:${messages}">
+            <td th:text="${msg.name}"></td>
+            <td th:text="${msg.subject}"></td>
+            <td th:text="${msg.email}"></td>
+            <td th:text="${msg.message}"></td>
+        </tr>
+    </table>
+
+</div>
+<!--<footer th:replace="~{include/footer::foot}">-->
+<!--</footer>-->
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/header::head}">
+</head>
+<body>
+<header th:replace="~{include/top-header::top-head}">
+</header>
+<div class="content">
+    <form action="/sendMessage" method="post" th:object="${messages}" enctype="multipart/form-data">
+        <input type="hidden" name="msgid" th:value="${msgid}"> <br/>
+<!--        <input type="hidden" name="id" th:value="${wishlistid}"> <br/>-->
+<!--        <input type="hidden" name="id" th:value="${cartid}"> <br/>-->
+<!--        <input type="hidden" name="id" th:value="${ratingsid}"> <br/>-->
+<!--        <input type="hidden" name="id" th:value="${oderdetailsid}"> <br/>-->
+<!--        <input type="hidden" name="id" th:value="${salesid}"> <br/>-->
+
+        Name: <input type="text" name="name" th:value="${name}"> <br/>
+        Email: <input type="email" name="email" th:value="${email}"> <br/>
+        Subject: <input type="text" name="subject" th:value="${subject}"> <br/>
+        message: <input type="text" name="message" th:value="${message}"> <br/>
+        <input type="submit" VALUE="Submit">
+    </form>
+</div>
+<footer th:replace="~{include/footer::foot}">
+</footer>
+</body>
+</html>

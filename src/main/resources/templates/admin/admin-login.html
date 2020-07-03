@@ -1,0 +1,18 @@
+<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{include/header::head}">
+</head>
+<body>
+<header th:replace="~{include/top-header::top-head}">
+</header>
+<div class="content">
+    <form action="accessAdmin" method="post" th:object="${admin}">
+        Username: <input type="text" name="uname" th:value="${uname}"> <br/>
+        Password: <input type="password" name="pword" th:value="${pword}"> <br/> <br/>
+        <input type="submit" VALUE="Login">
+    </form>
+</div>
+<footer th:replace="~{include/footer::foot}">
+</footer>
+</body>
+</html>

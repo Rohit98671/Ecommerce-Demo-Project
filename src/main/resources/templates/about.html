@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html class="no-js" lang="en" xmlns:th="http://www.thymeleaf.org">
+ <head th:replace="~{include/header::head}">
+ </head>
+    <body>
+	<header th:replace="~{include/top-header::top-head}">
+	</header>
+
+		<!-- breadcrumb start -->
+		<div class="breadcrumb-area">
+			<div class="container">
+				<ol class="breadcrumb">
+				  <li><a th:href="@{home}"><i class="fa fa-home"></i> Home</a></li>
+				  <li class="active">About Us</li>
+				</ol>			
+			</div>
+		</div>
+		<!-- breadcrumb end -->	
+		<!-- about-us-area-start -->
+		<div class="about-us-area">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="about-us-page">
+							<div class="about-content">
+								<p>We are cool people.:)</p>
+							</div>
+							<div class="about-content">
+								<p>Group 2 is always cool..o_o"</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- about-us-area-end -->
+	<footer th:replace="~{include/footer::foot}">
+	</footer>
+    </body>
+</html>
+
